@@ -1,0 +1,14 @@
+library("ggplot2")
+library("ggpubr")
+theme_set(theme_bw() + theme(legend.position = "top"))
+
+#Load data
+data_x=read.table("unite_toR",header=T)
+
+#For all others
+p<-ggplot(data_x, aes(Confidence,F1,colour=Classifier))+geom_smooth(span=0.1,method="loess")
+p + facet_grid(rows = vars(Rank))
+
+#For Greengenes
+p<-ggplot(data_x, aes(Confidence,F1,colour=Classifier))+geom_smooth(span=0.1,method="loess")+ coord_cartesian(ylim=c(0.95, 1))
+p + facet_grid(rows = vars(Rank))

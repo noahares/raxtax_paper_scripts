@@ -1,0 +1,13 @@
+library(BayesANT)
+file.train <- file("rdp_train_0.fasta")
+rank <- 6
+rank_names <- c( "Phylum", "Class", "Order", "Family", "Genus", "Species")
+data <- read.BayesANT.data(fasta.file = file.train, rank = rank, rank_names = rank_names)
+classifier <- BayesANT(data = data, typeseq = "not aligned", type_location = "single", newtaxa = TRUE, verbose = TRUE)
+file.test <- file("test_0.fasta")
+testDNA <- read.BayesANT.testDNA(file.test)
+options(max.print = .Machine$integer.max)
+out <- predict(classifier, DNA = testDNA, rho = 0.1, verbose = T, cores = 48)
+sink("bayesant.out")
+out
+sink()
