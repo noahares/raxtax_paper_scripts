@@ -1,8 +1,22 @@
+# Context
+
+This repository contains the scripts used for the experimental evaulation of [`raxtax`](https://github.com/noahares/raxtax).
+The preprint with the results of these analyses is available at [BioRxiv](https://www.biorxiv.org/content/10.1101/2025.03.11.642618v1).
+The databases we used are too big to host them on GitHub.
+To reproduce these results, they have to be manually downloaded from the respective webservers:
+
+- [UNITE](https://unite.ut.ee/)
+- [Greengenes](https://greengenes.lbl.gov/Download/)
+- [BOLD](https://v4.boldsystems.org/)
+
+The BOLD Snapshots unfortunately are no longer publicly available.
+We can provide them upon request for the purpose of peer-review.
+
 # Resource and Speedup Experiments
 
 All python scripts have `--help` options for arguments.
 Plotting scripts will output PDF figures and write tables to stdout.
-Install python dependencies via `pip install < requirements.txt`
+Install python dependencies via `pip install < requirements.txt`.
 
 ## Time and Memory Experiments for Competing Tools
 
@@ -15,7 +29,7 @@ To run one cross validation, place query and reference FASTA files into the desi
 - run_single_cross_validation.sh
 
 Make sure to name the input files as stated in the scripts or change the names in the script.
-The run `./run_single_cross_validation.sh`
+The run `./run_single_cross_validation.sh`.
 
 This will produce `*.time.log` files containing the output of `/usr/bin/time -v` for each tool.
 For the paper we split each database into 90% references and 10% queries 10 times.
