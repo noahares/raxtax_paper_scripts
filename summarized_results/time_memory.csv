@@ -1,0 +1,17 @@
+DB,Tool,TimeSeconds,MemoryKBytes
+unite,bayesant,320.1,3523020
+unite,idtaxa,2202.3,3691608
+unite,raxtax,2.18,533716
+unite,rdp,399.07,10989120
+unite,sintax,11.62,133800
+greengenes,bayesant,217.39,9615552
+greengenes,idtaxa,3643,5396752
+greengenes,raxtax,236.81,3171364
+greengenes,rdp,166.46,605072
+greengenes,sintax,93.8,1248236
+bold,idtaxa,206149,26344020
+bold,raxtax,781.08,9925032
+bold,rdp,77506.72,50523568
+bold,sintax,2092.24,3780268
+bold_diff,raxtax,5075,14837980
+bold_diff,sintax,28527.63,6851640
