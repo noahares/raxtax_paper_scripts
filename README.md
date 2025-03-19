@@ -3,6 +3,7 @@
 This repository contains the scripts used for the experimental evaulation of [`raxtax`](https://github.com/noahares/raxtax).
 The preprint with the results of these analyses is available at [BioRxiv](https://www.biorxiv.org/content/10.1101/2025.03.11.642618v1).
 The databases we used are too big to host them on GitHub.
+The files in the `summarized_results` folder were used for creating figures and tables for the manuscript.
 To reproduce these results, they have to be manually downloaded from the respective webservers:
 
 - [UNITE](https://unite.ut.ee/)
