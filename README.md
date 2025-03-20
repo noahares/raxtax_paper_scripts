@@ -4,14 +4,7 @@ This repository contains the scripts used for the experimental evaulation of [`r
 The preprint with the results of these analyses is available at [BioRxiv](https://www.biorxiv.org/content/10.1101/2025.03.11.642618v1).
 The databases we used are too big to host them on GitHub.
 The files in the `summarized_results` folder were used for creating figures and tables for the manuscript.
-To reproduce these results, they have to be manually downloaded from the respective webservers:
-
-- [UNITE](https://unite.ut.ee/)
-- [Greengenes](https://greengenes.lbl.gov/Download/)
-- [BOLD](https://v4.boldsystems.org/)
-
-The BOLD Snapshots unfortunately are no longer publicly available.
-We can provide them upon request for the purpose of peer-review.
+To reproduce these results, the databases are available at [Zenodo](https://doi.org/10.5281/zenodo.15057027).
 
 # Resource and Speedup Experiments
 
